@@ -2,6 +2,7 @@
 
 # dependencies
 nextjs-tutoring/node_modules
+node_modules
 nextjs-tutoring/.pnp
 nextjs-tutoring/.pnp.js
 
