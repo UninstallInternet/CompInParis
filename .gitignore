@@ -1,23 +1,22 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-tutor_platform/node_modules
-tutor_platform/.pnp
-tutor_platform/.pnp.js
+nextjs-tutoring/node_modules
+nextjs-tutoring/.pnp
+nextjs-tutoring/.pnp.js
 
 # testing
-tutor_platform/coverage
+nextjs-tutoring/coverage
 
 # production
-tutor_platform/build
+nextjs-tutoring/build
 
 # misc
-tutor_platform/.DS_Store
-tutor_platform/.env.local
-tutor_platform/.env.development.local
-tutor_platform/.env.test.local
-tutor_platform/.env.production.local
-
-tutor_platform/npm-debug.log*
-tutor_platform/yarn-debug.log*
-tutor_platform/yarn-error.log*
+nextjs-tutoring/.DS_Store
+nextjs-tutoring/.env.local
+nextjs-tutoring/.env.development.local
+nextjs-tutoring/.env.test.local
+nextjs-tutoring/.env.production.local
+nextjs-tutoring/npm-debug.log*
+nextjs-tutoring/yarn-debug.log*
+nextjs-tutoring/yarn-error.log*
