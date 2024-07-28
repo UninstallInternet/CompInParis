@@ -1,23 +1,23 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-CompInParis/node_modules
-CompInParis/.pnp
-CompInParis/.pnp.js
+tutor_platform/node_modules
+tutor_platform/.pnp
+tutor_platform/.pnp.js
 
 # testing
-CompInParis/coverage
+tutor_platform/coverage
 
 # production
-CompInParis/build
+tutor_platform/build
 
 # misc
-CompInParis/.DS_Store
-CompInParis/.env.local
-CompInParis/.env.development.local
-CompInParis/.env.test.local
-CompInParis/.env.production.local
+tutor_platform/.DS_Store
+tutor_platform/.env.local
+tutor_platform/.env.development.local
+tutor_platform/.env.test.local
+tutor_platform/.env.production.local
 
-CompInParis/npm-debug.log*
-CompInParis/yarn-debug.log*
-CompInParis/yarn-error.log*
+tutor_platform/npm-debug.log*
+tutor_platform/yarn-debug.log*
+tutor_platform/yarn-error.log*
