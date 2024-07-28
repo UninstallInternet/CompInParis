@@ -1,0 +1,30 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+nextjs-tutoring/node_modules
+nextjs-tutoring/.pnp
+nextjs-tutoring/.pnp.js
+
+# testing
+nextjs-tutoring/coverage
+
+# next.js
+nextjs-tutoring/.next/
+nextjs-tutoring/out/
+
+# production
+nextjs-tutoring/build
+
+# misc
+nextjs-tutoring/.DS_Store
+
+# debug
+nextjs-tutoring/npm-debug.log*
+nextjs-tutoring/yarn-debug.log*
+nextjs-tutoring/yarn-error.log*
+
+# local env files
+nextjs-tutoring/.env.local
+nextjs-tutoring/.env.development.local
+nextjs-tutoring/.env.test.local
+nextjs-tutoring/.env.production.local
