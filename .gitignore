@@ -21,3 +21,4 @@ nextjs-tutoring/.env.production.local
 nextjs-tutoring/npm-debug.log*
 nextjs-tutoring/yarn-debug.log*
 nextjs-tutoring/yarn-error.log*
+nextjs-tutoring/.next/static/webpack/*

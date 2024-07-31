@@ -5,6 +5,7 @@ import ProfileCard from '../components/ProfileCard'
 import MainContent from '../components/MainContent'
 import LoginPage from '../components/LoginPage'
 import styles from '../styles/Home.module.css'
+import StudentsPage from '../components/StudentsPage'
 
 export default function Home() {
   const [session, setSession] = useState(null)
@@ -36,7 +37,7 @@ export default function Home() {
     const { data, error } = await supabase
       .from('Tutors')
       .select('name, email')
-      .eq('UUID', userId)
+      //.eq('UUID', userId)
       .single()
 
     if (error) {
@@ -74,7 +75,11 @@ export default function Home() {
         onPageChange={setCurrentPage}
         onLogout={handleLogout}
       />
-      <MainContent currentPage={currentPage} />
+      {currentPage === 'students' ? (
+        <StudentsPage tutorId={session.user.id} />
+      ) : (
+        <MainContent currentPage={currentPage} />
+      )}
     </div>
   )
 }
