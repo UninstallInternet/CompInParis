@@ -1,15 +1,21 @@
-.studentsPage {
-    padding: 20px;
-  }
-  
-  .studentsList {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .studentItem {
-    background-color: #f0f0f0;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 4px;
-  }
+.pageContainer {
+  display: flex;
+  padding: 20px;
+}
+
+.studentDetailsPage {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.classGroupList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.classGroupItem {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
