@@ -68,6 +68,7 @@ export default function Home() {
   }
 
   return (
+       
     <div className={styles.container}>
       <ProfileCard
         name={tutorInfo?.name || session.user.email}
@@ -80,6 +81,7 @@ export default function Home() {
       ) : (
         <MainContent currentPage={currentPage} />
       )}
+      
     </div>
   )
 }
