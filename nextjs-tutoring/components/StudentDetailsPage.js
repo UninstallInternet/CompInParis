@@ -3,6 +3,8 @@ import { useRouter } from 'next/router'
 import { supabase } from '../utils/supabaseClient'
 import styles from '../styles/StudentDetailsPage.module.css'
 import ProfileCard from './ProfileCard'
+import Link from 'next/link'
+
 
 const StudentDetailsPage = ({ session, tutorInfo, onLogout }) => {
   const [student, setStudent] = useState(null)
@@ -84,9 +86,13 @@ const StudentDetailsPage = ({ session, tutorInfo, onLogout }) => {
             <ul className={styles.classGroupList}>
               {classGroups.map((group) => (
                 <li key={group.id} className={styles.classGroupItem}>
-                  <p>Date: {new Date(group.date).toLocaleDateString()}</p>
-                  <p>Subject: {group.subject}</p>
-                  <p>Notes: {group.notes}</p>
+                  <Link href={`/student/${id}/group/${group.id}`}>
+                    <div>
+                      <p>Date: {new Date(group.created_at).toLocaleDateString()}</p>
+                      <p>Subject: {group.name}</p>
+                      <p>Notes: {group.description}</p>
+                    </div>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -96,6 +102,5 @@ const StudentDetailsPage = ({ session, tutorInfo, onLogout }) => {
     </div>
   )
 }
-
 
 export default StudentDetailsPage
